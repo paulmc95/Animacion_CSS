@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background: cornflowerblue;
+    border-radius: 50%;
+
+    /* animation: ; */
+    /* animation-name: cambiarColor; */
+    /* animation-duration: 1s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate: va del 0% al 100% y luego vuelve al 0% con una animación */
+    /* animation-direction: alternate-reverse: va del 100% al 0% y luego vuelve al 100% con una animación */
+    /* animation-direction: alternate; */
+    /* 0%-100% */
+    /* animation-fill-mode: forwards: Hace que los estilos del ultimo punto de la animación se seguiran aplicando aunque esta haya terminado */
+    /* animation-fill-mode: backwards: Hace que los estilos se apliquen antes de ejecutar la animación, necesita un animation-delay: 2s para que se note */
+    /* animation-fill-mode: both: Tendra un comportamiento backwards antes que se ejecute la animación, y un comportamiento forwards luego que se termine */
+    /* animation-fill-mode: both; */
+    /* animation-delay: 2s; */
+    
+    /* animation-timing-function: Define la curva de acelaración de la animación */
+    /* animation-timing-function: linear; */
+
+    animation: alternate infinite mover 10s;
+
+}
+
+.circle:hover{
+    /* Detiene la animación */
+    animation-play-state: paused;
+}
+
+@keyframes mover{
+    /* 0%{
+        transform: scale(1);
+        background-color: blue;
+    }
+
+    20%{
+        transform: scale(.3);
+        background-color: yellow;
+    }
+
+    40%{
+        transform: scale(.6);
+        background-color: black;
+    }
+
+    60%{
+        transform: scale(.9);
+        background-color: chartreuse;
+    }
+
+    80%{
+        transform: scale(1);
+        background-color: coral;
+    } */
+
+
+    0%{
+        transform: translate(0);
+        background-color: crimson;
+    }
+
+    25%{
+        transform: translate(100%);
+        background-color: salmon;
+    }
+
+    50%{
+        transform: translate(100%,100%);
+        background-color: slateblue;
+    }
+
+    75%{
+        transform: translate(0, 100%);
+        background-color: teal;
+    }
+
+    100%{
+
+    }
+    
+}
